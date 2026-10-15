@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ServiceHub - Find Trusted Service Providers</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            ServiceHub
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#providers">Providers</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-buttons">
+             <button onclick="window.location.href='register.html'">
+                Register as Provider
+                </button> 
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Find Trusted Service Providers Near You
+            </h1>
+
+            <p>
+                Find skilled and trusted people for your daily service needs.
+            </p>
+
+            <!-- Search Box -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="serviceSearch"
+                    placeholder="What service do you need?"
+                >
+
+                <input
+                    type="text"
+                    id="locationSearch"
+                    placeholder="Enter your location"
+                >
+
+                <button onclick="searchService()">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+
+        <h2>Popular Services</h2>
+
+        <p>
+            Find professionals for different types of services.
+        </p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>🔧 Electrician</h3>
+                <p>Find electricians near you.</p>
+                <button onclick="selectService('Electrician')">
+                    Find Provider
+                </button>
+            </div>
+
+            <div class="service-card">
+                <h3>🚿 Plumber</h3>
+                <p>Get trusted plumbing services.</p>
+                <button onclick="selectService('Plumber')">
+                    Find Provider
+                </button>
+            </div>
+
+            <div class="service-card">
+                <h3>💻 Computer Repair</h3>
+                <p>Computer and laptop repair services.</p>
+                <button onclick="selectService('Computer Repair')">
+                    Find Provider
+                </button>
+            </div>
+
+            <div class="service-card">
+                <h3>🧹 Cleaning</h3>
+                <p>Professional home cleaning services.</p>
+                <button onclick="selectService('Cleaning')">
+                    Find Provider
+                </button>
+            </div>
+
+            <div class="service-card">
+                <h3>🚰 RO Service</h3>
+                <p>RO water purifier repair and service.</p>
+                <button onclick="selectService('RO Service')">
+                    Find Provider
+                </button>
+            </div>
+
+            <div class="service-card">
+                <h3>🔨 Carpenter</h3>
+                <p>Find skilled carpenters near you.</p>
+                <button onclick="selectService('Carpenter')">
+                    Find Provider
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Provider Section -->
+    <section id="providers" class="providers">
+
+        <h2>Become a Service Provider</h2>
+
+        <p>
+            Register yourself and get customers through our platform.
+        </p>
+
+        <button onclick="showRegister()">
+            Register as Provider
+        </button>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+        <h2>About ServiceHub</h2>
+
+        <p>
+            ServiceHub is a service marketplace where customers can
+            find local service providers and service providers can
+            connect with customers.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Need help? Contact our support team.
+        </p>
+
+        <button onclick="contactUs()">
+            Contact Support
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 ServiceHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
